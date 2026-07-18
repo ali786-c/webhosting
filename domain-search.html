@@ -110,7 +110,7 @@
                       </a>
                     </li>
                     <li class="col-md-6">
-                      <a href="domain-transfer.html" class="dropdown-items">
+                      <a href="https://my.aasmarthosting.com/cart.php?a=add&domain=transfer&" class="dropdown-items">
                       <span class="icon-boxs"> <i class="bi bi-arrow-left-right"></i> </span>
                       <span class="content-box">
                       <span class="headings">
@@ -162,11 +162,13 @@
         <div class="main-heading">
           <h1>Find, Register &amp; Manage Your Perfect Domain Name</h1>
           <p>Search, secure, and manage domain names effortlessly with real-time availability and a wide range of TLD extensions.</p>
-          <div class="domain-search-form">
+          <form action="https://my.aasmarthosting.com/cart.php" method="get" class="domain-search-form">
+            <input type="hidden" name="a" value="add">
+            <input type="hidden" name="domain" value="register">
             <i class="bi bi-search"></i>
-            <input class="inputs" type="text" name="domain" placeholder="Search your domain" value="" id="inputDomain" data-toggle="tooltip" data-placement="top" data-trigger="manual" title="" data-domain-search="" data-original-title="Enter a domain or keyword">
+            <input class="inputs" type="text" name="query" placeholder="Search your domain" value="" id="inputDomain" data-toggle="tooltip" data-placement="top" data-trigger="manual" title="" data-domain-search="" data-original-title="Enter a domain or keyword" required>
             <button class="btn-theme btn1" type="submit">Search</button>
-          </div>
+          </form>
         </div>
       </div>
       <div class="col-lg-6 text-lg-end text-center">
