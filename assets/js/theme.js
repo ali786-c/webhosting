@@ -9,6 +9,7 @@ var theme = {
     theme.accordion();
     theme.swiperslider();
     theme.scrollButton();
+    theme.domainSearch();
   },
 
 
@@ -264,12 +265,32 @@ scrollButton: function () {
     document.cookie = name + "=" + (value || "") + expires + "; path=/";
   },
 
+  domainSearch: function () {
+    $('.domain-search-form').each(function () {
+      var $form = $(this);
+      var $input = $form.find('input');
+      var $button = $form.find('button');
 
+      function performSearch() {
+        var query = $.trim($input.val());
+        if (query) {
+          window.location.href = 'https://my.aasmarthosting.com/cart.php?a=add&domain=register&query=' + encodeURIComponent(query);
+        }
+      }
 
+      $button.on('click', function (e) {
+        e.preventDefault();
+        performSearch();
+      });
 
-
-
-
+      $input.on('keypress', function (e) {
+        if (e.which === 13) {
+          e.preventDefault();
+          performSearch();
+        }
+      });
+    });
+  }
 
 };
 
