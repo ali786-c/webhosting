@@ -5,14 +5,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aasmarthosting.com/builder.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aasmarthosting.com/bulk-transfer.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://aasmarthosting.com/bussiness-email.html</loc>
     <priority>0.8</priority>
   </url>
@@ -21,19 +13,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aasmarthosting.com/contact-us.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://aasmarthosting.com/dedicated-server.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aasmarthosting.com/digicert-certificate.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aasmarthosting.com/domain-bulk-register.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -41,23 +21,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aasmarthosting.com/domain-promos.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://aasmarthosting.com/domain-search.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aasmarthosting.com/domain-transfer.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://aasmarthosting.com/enterprise-email.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aasmarthosting.com/free-gtlds.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -73,24 +41,12 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://aasmarthosting.com/linux-vps-server.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://aasmarthosting.com/login.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aasmarthosting.com/new-gtlds.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aasmarthosting.com/policy.html</loc>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://aasmarthosting.com/premium-domain.html</loc>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aasmarthosting.com/reseller-hosting.html</loc>
