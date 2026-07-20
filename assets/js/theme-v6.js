@@ -8,16 +8,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.getElementById('navLinks');
 
   if (menuBtn && navLinks) {
-    menuBtn.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
+    const toggleMenu = (state) => {
+      const open = state !== undefined ? state : !navLinks.classList.contains('open');
+      navLinks.classList.toggle('open', open);
       menuBtn.setAttribute('aria-expanded', open);
+      menuBtn.textContent = open ? '✕' : '☰';
+    };
+
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
     });
 
-    navLinks.querySelectorAll('a:not(.dropdown-toggle)').forEach(a => {
-      a.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded', 'false');
+    navLinks.querySelectorAll('a:not(.dropdown-toggle), .btn').forEach(link => {
+      link.addEventListener('click', () => {
+        toggleMenu(false);
       });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+        toggleMenu(false);
+      }
     });
   }
 
@@ -27,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', (e) => {
       if (window.innerWidth <= 960) {
         e.preventDefault();
+        e.stopPropagation();
         const parent = toggle.closest('.nav-item');
         if (parent) parent.classList.toggle('open');
       }
